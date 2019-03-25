@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  &__card {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container__card {
+    width: 100%;
+  }
+}

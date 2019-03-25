@@ -1,0 +1,10 @@
+<div class="card">
+  <div *ngIf="loading" class="loader"></div>
+  <img (load)="onLoad()"
+       class="card__image"
+       appLazyImage
+       [src]="model.url"
+       [rootMargin]="200"
+       [ngClass]="{'card__image--fade-in' : !loading}"
+       alt="model.title">
+</div>

@@ -1,0 +1,6 @@
+<div *ngIf="modelIsLoaded" class="container">
+  <div *ngFor="let image of model; let i=index" class="container__card">
+    <app-image-card [model]="image"></app-image-card>
+  </div>
+</div>
+
